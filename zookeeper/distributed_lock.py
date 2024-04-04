@@ -8,13 +8,13 @@ zk.start()
 
 lock = Lock(zk, "/distributed_lock")
 
-def do_with_lock():
+def acquire_lock():
     with lock:
         print("Lock acquired, critical section")
         time.sleep(random.randint(1, 5))
         print("Exiting critical section")
 
 for _ in range(5):
-    do_with_lock()
+    acquire_lock()
 
 zk.stop()
