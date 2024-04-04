@@ -10,6 +10,8 @@ session_id = uuid.uuid4();
 
 lock = OurReadWriteLock(zk, "/our_lock")
 
+print(f"Session_id: {session_id}")
+
 def acquire_lock():
     if random.randint(1, 5) % 2:
         print("Trying to acquire read lock")
