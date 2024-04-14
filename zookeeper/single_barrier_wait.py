@@ -8,10 +8,10 @@ zk.start()
 barrier = Barrier(zk, "/single_barrier")
 
 def wait_at_barrier():
-    print("Waiting at barrier")
+    print(f"{time.ctime()}: Waiting at barrier")
     barrier.create() 
     barrier.wait() 
-    print("Crossing the barrier")
+    print(f"{time.ctime()}: Crossing the barrier")
 
 wait_at_barrier()
 

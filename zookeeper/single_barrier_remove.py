@@ -9,7 +9,7 @@ barrier = Barrier(zk, "/single_barrier")
 
 def remove_barrier():
     barrier.remove() 
-    print("Barrier removed")
+    print(f"{time.ctime()}: Barrier removed")
 
 remove_barrier()
 

@@ -15,9 +15,9 @@ barrier = OurDoubleBarrier(zk, "/our_barrier", 2, session_id.hex)
 def enter_barrier():
     barrier.enter()
 
-    print("Entered barrier. Doing random work")
+    print(f"{time.ctime()}: Entered barrier. Doing random work")
     time.sleep(random.randint(2, 5))
-    print("Exiting barrier")
+    print(f"{time.ctime()}: Exiting barrier")
 
     barrier.leave()
 

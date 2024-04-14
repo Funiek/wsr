@@ -9,9 +9,9 @@ session_id = uuid.uuid4();
 
 
 def leader_callback():
-    print(f"Session {str(session_id)}: Became the leader")
+    print(f"{time.ctime()}: Session {str(session_id)}: Became the leader")
     time.sleep(5)  
-    print(f"Session {str(session_id)}: Ending leadership")
+    print(f"{time.ctime()}: Session {str(session_id)}: Ending leadership")
 
 election = Election(zk, "/leader_election")
 election.run(leader_callback)

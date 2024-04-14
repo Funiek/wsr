@@ -10,9 +10,9 @@ lock = Lock(zk, "/distributed_lock")
 
 def acquire_lock():
     with lock:
-        print("Lock acquired, critical section")
+        print(f"{time.ctime()}: Lock acquired, critical section")
         time.sleep(random.randint(1, 5))
-        print("Exiting critical section")
+        print(f"{time.ctime()}: Exiting critical section")
 
 for _ in range(5):
     acquire_lock()
