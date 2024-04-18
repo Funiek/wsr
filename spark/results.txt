@@ -1,0 +1,26 @@
+zad1 rdd
+times native:
+Record count: 10000000 Execution time: 7.724942922592163
+Filtered users count: 476082 Execution time: 6.904789924621582
+Total time for bob: 119824150 Execution time: 6.572086811065674
+
+Record count: 10000000 Execution time: 7.428728103637695
+Filtered users count: 476082 Execution time: 7.025680065155029
+Total time for bob: 119824150 Execution time: 6.406618118286133
+
+Record count: 10000000 Execution time: 8.997168064117432
+Filtered users count: 476082 Execution time: 7.042074203491211
+Total time for bob: 119824150 Execution time: 6.4679553508758545
+
+times cached:
+Record count: 10000000 Execution time: 3.0817043781280518
+Filtered users count: 476082 Execution time: 6.053707122802734
+Total time for bob: 119824150 Execution time: 5.055083751678467
+
+Record count: 10000000 Execution time: 3.0672354698181152
+Filtered users count: 476082 Execution time: 6.22104549407959
+Total time for bob: 119824150 Execution time: 5.578068733215332
+
+Record count: 10000000 Execution time: 3.1478140354156494
+Filtered users count: 476082 Execution time: 5.86965799331665
+Total time for bob: 119824150 Execution time: 5.092817068099976

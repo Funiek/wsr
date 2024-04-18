@@ -1,1 +1,2 @@
-/usr/local/spark/bin/spark-submit demo.py --master spark://grid-1:7077 --total-executor-cores 8 2>&1 | grep -v "INFO"
+/usr/local/spark/bin/spark-submit monte.py --master spark://grid-1:7077 --executor-memory 4G --driver-memory 2G --
+total-executor-cores 8 2>&1 | grep -v "INFO"
