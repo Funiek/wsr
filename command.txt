@@ -1,0 +1,5 @@
+/usr/local/spark/bin/spark-submit monte.py --master spark://grid-1:7077 --executor-memory 4G --driver-memory 2G --
+total-executor-cores 8 2>&1 | grep -v "INFO"
+
+/usr/local/spark/bin/pyspark --master spark://grid-1:7077 --total-executor-cores 2 --executor-memory 4G --driver-memory 2G --name "passat_5G_100%_mocy"
+exec(open("/home/student/Documents/kf/spark/zad2.py").read())
