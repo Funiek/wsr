@@ -15,3 +15,8 @@ record_count.show()
 filtered_users_count = spark.sql("SELECT COUNT(*) FROM logs WHERE _c1 = 'bob' OR _c1 = 'alice'")
 print(f"Filtered users count:")
 filtered_users_count.show()
+
+
+users = spark.sql("SELECT _c1, COUNT(*) FROM logs GROUP BY _c1")
+print(f"Users with times:")
+users.show()

@@ -1,0 +1,72 @@
+zad2.1
+dla: NUM_SAMPLES=100_000_000
+wynik: Pi is roughly 3.14150176 
+local[1]: Execution time: 42.5679886341095
+--total-executor-cores 2: Execution time: 22.76657462120056
+--total-executor-cores 4: Execution time: 12.585352897644043
+--total-executor-cores 8: Execution time: 6.490753412246704
+--total-executor-cores 16: Execution time: 2.962890863418579
+--total-executor-cores 32: Execution time: 1.6104423999786377
+
+zad2.2.1
+parametry takie same jak dla zad2.1 i total-executor-cores 16
+partitions 4: Execution time: 32.92941117286682
+partitions 8: Execution time: 19.201843976974487
+partitions 16: Execution time: 9.283429861068726
+partitions 32: Execution time: 8.580779790878296
+partitions 64: Execution time: 9.019852876663208 
+partitions 128: Execution time: 9.736907720565796
+
+zad2.2.2
+
+user24: 840964041
+user4: 839566610
+user25: 842069199
+user2: 840214606
+user20: 840763363
+user30: 840296094
+user9: 841501312
+user38: 842454255
+user11: 840413452
+user35: 841167876
+user1: 840839730
+bob: 3366103159
+user33: 840587148
+user15: 841253532
+user19: 840618883
+user18: 841815258
+user34: 839246579
+user32: 840484847
+user13: 841408454
+user36: 842567724
+user31: 842093231
+user14: 842983437
+user12: 840391661
+user6: 841232213
+user5: 839420627
+user39: 841289663
+user0: 841351939
+user16: 840201431
+user27: 840211748
+user7: 840469341
+user23: 11658639526
+user3: 839905144
+user8: 840405628
+user21: 839637672
+user10: 839369550
+user22: 840446089
+user28: 839498689
+user37: 840962533
+user29: 839956775
+user26: 840603149
+user17: 841930978
+alice: 5886556647
+
+Execution time before cached: 0.6922430992126465 Execution time after cached: 0.024414777755737305
+Total time for bob: 3366103159 Execution time: 0.3060779571533203
+Total execution time for 4 partitions: 0.028728246688842773
+Total execution time for 8 partitions: 0.02481222152709961
+Total execution time for 16 partitions: 0.024974822998046875
+Total execution time for 32 partitions: 0.019338369369506836
+Total execution time for 64 partitions: 0.026635408401489258
+Total execution time for 128 partitions: 0.026686429977416992
