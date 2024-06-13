@@ -64,9 +64,9 @@ alice: 5886556647
 
 Execution time before cached: 0.6922430992126465 Execution time after cached: 0.024414777755737305
 Total time for bob: 3366103159 Execution time: 0.3060779571533203
-Total execution time for 4 partitions: 0.028728246688842773
-Total execution time for 8 partitions: 0.02481222152709961
-Total execution time for 16 partitions: 0.024974822998046875
-Total execution time for 32 partitions: 0.019338369369506836
-Total execution time for 64 partitions: 0.026635408401489258
-Total execution time for 128 partitions: 0.026686429977416992
+Total execution time for 4 partitions: 0.02164435386657715
+Total execution time for 8 partitions: 0.014806032180786133
+Total execution time for 16 partitions: 0.016950130462646484
+Total execution time for 32 partitions: 0.015752315521240234
+Total execution time for 64 partitions: 0.015451192855834961
+Total execution time for 128 partitions: 0.01977396011352539
